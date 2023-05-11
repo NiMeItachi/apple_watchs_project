@@ -1,3 +1,6 @@
+import 'package:b28_nursultan_suleymanov_exam5/screens/main_screen.dart';
+import 'package:b28_nursultan_suleymanov_exam5/screens/watch1_screen.dart';
+import 'package:b28_nursultan_suleymanov_exam5/screens/watch2_screen.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -5,6 +8,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp();
+    return MaterialApp(
+      home: const MainPage(),
+      routes: {
+        MainPage.id: (context) => const MainPage(),
+        Watch1Page.id: (context) => const Watch1Page(),
+        Watch2Page.id: (context) => const Watch2Page(),
+      },
+    );
   }
 }

@@ -1,0 +1,23 @@
+- Do While loop ning ishlash jarayonini tushuntiring?
+
+    Do While loop bu - boshqa looplarga qaraganda biroz farq qiluvchi loop,
+    chunki u 2 qismdan tashkil topadi: "do" va "while". Bu loopning oldin
+    "do" qismi, keyin "while" qismi yoziladi. "do" qismi birinchi ishga
+    tushib undagi hamma amallar bajariladi, undan keyin "while" qismida
+    berilgan shartni tekshiradi.
+
+    Agarda "while" dagi shart "false" boladigan bo'lsa, tsikl qayta aylanadi,
+    va "do" qism ishga tushadi. Tsikllar qachonki "while" dagi shart "true"
+    bo'lgancha qayta-qayta aylanaveradi.
+
+
+    Sintaksis:
+        do {
+            a++;
+        }
+        while (a > 10);
+
+
+    Biz bu turdagi loopdan qachonki tsikldagi shart tekshirilishidan oldin
+    qandaydir amal bajarmoqchi bolsakgina foydalanamiz. Qolgan holatlarda
+    "for" loop yoki "while" loop dan foydalanganimiz avfzalroq!

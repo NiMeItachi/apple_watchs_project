@@ -1,0 +1,36 @@
+- Generic tur nima? Generic method yoki funksiya qanday ko'rinishda boladi?
+Generic class qanday e'lon qilamiz?
+
+    Generic tur "generic type" - bu dart tomonidan yaratilgan tur bo'lib
+    u "umumiy tur" den ham yuritiladi. Boshqa dasturlash tillarda
+    method overloadingmavjud, Dartda esa bunaqa hususiyat yoq.
+    Buning orniga Dart Generic type dan foydalanadi. Generic type
+    type inference dan foydalanib kelgan type ni generic type ga tenglab
+    qo'yadi. Bizga bu asosan funksiyalarda: Keladigan type ni bilmaydigan
+    paytlarimizda yordam beradi. Generic typening o'rniga doim var yoki
+    dynamic yozaverish to'g'ri bo'lmaydi.
+
+    Sintaksis:
+        Method:
+            T func <T extends num> (T number){
+                return number;
+            }
+
+
+        Class:
+            class A<T extends num> {
+                T myFunc (T name, T surname) {
+                    return name;
+                }
+            }
+
+    Generic Type doim: String type li bitta katta lotin harfli bo'lishi kerak.
+    Agarda bir nechta belgi boladigan bo'lsa ham error bermaydi.
+    Ammo u: son, belgi yoki probellardan tashkil topmasligi lozim!
+
+    Generic type ni biz ko'p joylarda foydalanamiz, misol uchun:
+        Iterable class imizning map methodi mavjud. U bir turdagi ma'lumotni
+        boshqa turdagi ma'lumotga aylantiradi. map methodi qanday turga
+        aylantirishini biz belgilaymiz. Bu yerda map methodining parametri
+        Generic type li funksiya qa'bul qiladi
+    Bundan tashqari ham ko'p joylarda generic type lar qo'llaniladi.
